@@ -12,4 +12,8 @@ class Index extends Controller
     public function login(){//http://mdj.cn/index/Index/login
         return $this->fetch("login");
     }
+
+    public function autoRegister(){//http://mdj.cn/index/Index/autoRegister
+     
+    }
 }
