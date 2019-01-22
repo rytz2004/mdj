@@ -9,7 +9,7 @@ class Index extends Controller
       return $this->fetch("rege");
      }
 
-    public function register(){//http://mdj.cn/index/Index/register
-        echo "register";
+    public function login(){//http://mdj.cn/index/Index/login
+        return $this->fetch("login");
     }
 }
