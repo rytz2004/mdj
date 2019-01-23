@@ -1,4 +1,10 @@
 aliyun renyuan_2015:string123  ssh 47.75.71.108 28848 String123
+hostname = "127.0.0.1";
+database = "pg";
+username = "root";
+password ="String1987";
+hostport ="3306";
+prefix = "snake_";
 
 1:首页                           我的
 {与友圈类似}                   {用户基本信息}
