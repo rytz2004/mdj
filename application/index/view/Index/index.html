@@ -1,3 +1,149 @@
+<!DOCTYPE html>
 <html>
-<p>Hello word !</p>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello MUI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--标准mui.css-->
+    <link rel="stylesheet" href="__static__/css/mui.min.css">
+    <!--App自定义的css-->
+    <link rel="stylesheet" type="text/css" href="__static__/css/app.css"/>
+    <style>
+
+        .title{
+            margin: 20px 15px 10px;
+            color: #6d6d72;
+            font-size: 15px;
+        }
+
+        .oa-contact-cell.mui-table .mui-table-cell {
+            padding: 11px 0;
+            vertical-align: middle;
+        }
+
+        .oa-contact-cell {
+            position: relative;
+            margin: -11px 0;
+        }
+
+        .oa-contact-avatar {
+            width: 75px;
+        }
+        .oa-contact-avatar img {
+            border-radius: 50%;
+        }
+        .oa-contact-content {
+            width: 100%;
+        }
+        .oa-contact-name {
+            margin-right: 20px;
+        }
+        .oa-contact-name, oa-contact-position {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title"></h1>
+</header>
+<nav class="mui-bar mui-bar-tab">
+    <a class="mui-tab-item mui-active" href="#tabbar">
+        <span class="mui-icon mui-icon-home"></span>
+        <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item" href="#tabbar-with-chat">
+        <span class="mui-icon mui-icon-email"><span class="mui-badge">9</span></span>
+        <span class="mui-tab-label">消息</span>
+    </a>
+    <a class="mui-tab-item" href="#tabbar-with-map">
+        <span class="mui-icon mui-icon-gear"></span>
+        <span class="mui-tab-label">我的</span>
+    </a>
+</nav>
+<div class="mui-content">
+    <div id="tabbar" class="mui-control-content mui-active">
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell mui-media">
+                <a href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="__static__/images/shuijiao.jpg">
+                    <div class="mui-media-body">
+                        幸福
+                        <p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+                        <img class="mui-media-object mui-pull-left" src="__static__/images/shuijiao.jpg">
+                        <img class="mui-media-object mui-pull-left" src="__static__/images/shuijiao.jpg">
+                    </div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <a href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="__static__/images/muwu.jpg">
+                    <div class="mui-media-body">
+                        木屋
+                        <p class='mui-ellipsis'>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <a href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="__static__/images/cbd.jpg">
+                    <div class="mui-media-body">
+                        CBD
+                        <p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <div id="tabbar-with-chat" class="mui-control-content">
+
+    </div>
+     <div id="tabbar-with-map" class="mui-control-content">
+        <div class="title">这是div模式选项卡中的第4个子页面，该页面展示一个常见的设置示例.</div>
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    新消息通知
+                </a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    隐私
+                </a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    通用
+                </a>
+            </li>
+        </ul>
+        <ul class="mui-table-view" style="margin-top: 25px;">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    关于mui
+                </a>
+            </li>
+        </ul>
+        <ul class="mui-table-view" style="margin-top: 25px;">
+            <li class="mui-table-view-cell">
+                <a style="text-align: center;color: #FF3B30;">
+                    退出登录
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="__static__/js/mui.min.js"></script>
+<script>
+    mui.init({
+        swipeBack:true //启用右滑关闭功能
+    });
+</script>
 </html>
