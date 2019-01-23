@@ -6,7 +6,9 @@ password ="String1987";
 hostport ="3306";
 prefix = "snake_";
 mysql -h127.0.0.1 -uroot -pString1987
+$user_info = Db::table('snake_user')->where('id','>',0)->select();
+
 
 1:首页                           我的
-{与友圈类似}                   {用户基本信息}
-                               {用户好友}
+     {与友圈类似}                   {用户基本信息}
+                                    {用户好友}
