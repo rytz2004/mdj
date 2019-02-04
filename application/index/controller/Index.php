@@ -12,7 +12,7 @@ class Index extends Controller
         }
     }
 
-    public function index()//http://mdj.cn/index/Index/index
+    public function index()//http://mdj.cn/index/Index/index  http://mdj.com/index/Index/index
    {
        // 判断用户是否登陆
        return $this->fetch("index");
