@@ -1,4 +1,4 @@
-aliyun renyuan_2015:string123  ssh 47.75.71.108 28848 String123
+aliyun renyuan_2015:String123  ssh 47.75.71.108 28848 String123
 hostname = "127.0.0.1";
 database = "pg";
 username = "root";
@@ -17,3 +17,51 @@ string1231987
 
 百度网盘
 rytz2004:string123
+2206755906
+-------------------------------------------
+http://marea7.club/public/index.php
+token : mdj2018
+EncodingAESKey : yqh0BY6tQxtFdR47HTXCjmbLDEu8Lcz2mUnDdSOnGXb
+
+AppSecret:7776739b041adcc726affeafffe1c832
+AppID:wxdd6aff4a0624bd6c
+公众号gh_429bcebabe24
+
+server {
+    listen 8084;
+    server_name marea7.club;
+    access_log /var/www/mdj/access_nginx.log combined;
+    root /var/www/mdj/public;
+    index index.html index.htm index.php;
+    #error_page 404 /404.html;
+    #error_page 502 /502.html;
+    location /nginx_status {
+      stub_status on;
+      access_log off;
+      allow 127.0.0.1;
+      deny all;
+    }
+    location /{
+       if (!-e $request_filename) {
+       rewrite ^(.*)$ /index.php?s=/$1 last;
+       break;
+      }
+    }
+     location ~ [^/]\.php(/|$) {
+      #fastcgi_pass remote_php_ip:9000;
+      fastcgi_pass unix:/dev/shm/php-cgi.sock;
+      fastcgi_index index.php;
+      include fastcgi.conf;
+    }
+    location ~ .*\.(gif|jpg|jpeg|png|bmp|swf|flv|mp4|ico)$ {
+      expires 30d;
+      access_log off;
+    }
+    location ~ .*\.(js|css)?$ {
+      expires 7d;
+      access_log off;
+    }
+    location ~ /\.ht {
+      deny all;
+    }
+  }

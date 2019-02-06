@@ -8,21 +8,21 @@ class Index extends Controller
     {
         $user = isset($_SESSION['name']) ? $_SESSION['name'] :null;
         if(!$user){
-           // $this->success('未登录，请登录',url('index/index'),3);
+            $this->success('未登录，请登录',url('Index/index'),3);
         }
     }
 
-    public function index()//http://mdj.cn/index/Index/index  http://mdj.com/index/Index/index
+    public function index()//http://mdj.com/index/Index/index  http://mdj.com/index/Index/index
    {
        // 判断用户是否登陆
        return $this->fetch("index");
     }
 
-    public function login(){//http://mdj.cn/index/Index/login
+    public function login(){//http://mdj.com/index/Index/login
         return $this->fetch("login");
     }
 
-    public function autoRegister(){//http://mdj.cn/index/Index/autoRegister
+    public function autoRegister(){//http://mdj.com/index/Index/autoRegister
      
     }
 }
