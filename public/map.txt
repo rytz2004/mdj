@@ -8,7 +8,12 @@ prefix = "snake_";
 mysql -h127.0.0.1 -uroot -pString1987
 $user_info = Db::table('snake_user')->where('id','>',0)->select();
 
+mdj is nice
+hello word
+ry_devd
+git config --global user.email "332105790@qq.com"
+git config --global user.name "rytz2004"
+string1231987
 
-1:首页                           我的
-     {与友圈类似}                   {用户基本信息}
-                                    {用户好友}
+百度网盘
+rytz2004:string123
