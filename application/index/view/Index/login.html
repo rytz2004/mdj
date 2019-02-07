@@ -134,20 +134,19 @@
         $.ajax({
             url:'/index/Index/login',
             type:'POST',//GET 或POST
-            dataType:'json',
-            contentType:"application/json",
-            async:true,//false是否异步
             data:{"account":account,"password":password},
-            processData: false,
+            async:true,//false是否异步
+            timeout:5000,    //超时时间
+            dataType:"json",    //返回的数据格式：json/xml/html/script/jsonp/text
             success:function(data){
                 var jsonObj =  JSON.parse(data);
                 if(jsonObj['code'] != 200){
                     alert(jsonObj['msg']);return;
                 }
-
+                window.location.href = '/index/Index/index';
             },
             error:function(data){
-                alert(2);
+                alert("登录失败");return;
             }
         });
 

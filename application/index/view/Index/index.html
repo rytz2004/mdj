@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Hello MUI</title>
+    <title>俱乐部</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -61,6 +61,10 @@
         <span class="mui-icon mui-icon-email"><span class="mui-badge">9</span></span>
         <span class="mui-tab-label">消息</span>
     </a>
+    <a class="mui-tab-item mui-active" href="#tabbar-with-send-chat">
+        <span class="mui-icon mui-icon-email"></span>
+        <span class="mui-tab-label">发送</span>
+    </a>
     <a class="mui-tab-item" href="#tabbar-with-map">
         <span class="mui-icon mui-icon-gear"></span>
         <span class="mui-tab-label">我的</span>
@@ -101,49 +105,98 @@
 
         </ul>
     </div>
+
     <div id="tabbar-with-chat" class="mui-control-content">
 
     </div>
-     <div id="tabbar-with-map" class="mui-control-content">
-        <div class="title">这是div模式选项卡中的第4个子页面，该页面展示一个常见的设置示例.</div>
-        <ul class="mui-table-view">
-            <li class="mui-table-view-cell">
-                <a class="mui-navigate-right">
-                    新消息通知
-                </a>
-            </li>
-            <li class="mui-table-view-cell">
-                <a class="mui-navigate-right">
-                    隐私
-                </a>
-            </li>
-            <li class="mui-table-view-cell">
-                <a class="mui-navigate-right">
-                    通用
-                </a>
-            </li>
-        </ul>
-        <ul class="mui-table-view" style="margin-top: 25px;">
-            <li class="mui-table-view-cell">
-                <a class="mui-navigate-right">
-                    关于mui
-                </a>
-            </li>
-        </ul>
-        <ul class="mui-table-view" style="margin-top: 25px;">
-            <li class="mui-table-view-cell">
-                <a style="text-align: center;color: #FF3B30;">
-                    退出登录
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-</body>
-<script src="__static__/js/mui.min.js"></script>
-<script>
-    mui.init({
-        swipeBack:true //启用右滑关闭功能
-    });
-</script>
-</html>
+
+    <div id="tabbar-with-send-chat" class="mui-control-content">
+
+        <div class="mui-input-row" style="margin: 10px 5px;">
+            <textarea id="texttitle" rows="1" placeholder="请输入标题"></textarea>
+            <textarea id="textarea" rows="5" placeholder="请输入内容"></textarea>
+        </div>
+        <div class="mui-einput-row" style="margin: 10px 5px;">
+        <form enctype="multipart/form-data" id="upForm">
+            <input type="file" name="file" id="file">
+            <input type="button" value="上传" onclick="upload();">
+        </form>
+        </div>
+             <div class="mui-button-row">
+                 <button type="button" class="mui-btn mui-btn-primary" onclick="sendOK()">确认</button>&nbsp;&nbsp;
+                 <button type="button" class="mui-btn mui-btn-danger" onclick="sendCancel()">取消</button>
+             </div>
+         </div>
+
+          <div id="tabbar-with-map" class="mui-control-content">
+             <div class="title">这是div模式选项卡中的第4个子页面，该页面展示一个常见的设置示例.</div>
+             <ul class="mui-table-view">
+                 <li class="mui-table-view-cell">
+                     <a class="mui-navigate-right">
+                         新消息通知
+                     </a>
+                 </li>
+                 <li class="mui-table-view-cell">
+                     <a class="mui-navigate-right">
+                         隐私
+                     </a>
+                 </li>
+                 <li class="mui-table-view-cell">
+                     <a class="mui-navigate-right">
+                         通用
+                     </a>
+                 </li>
+             </ul>
+             <ul class="mui-table-view" style="margin-top: 25px;">
+                 <li class="mui-table-view-cell">
+                     <a class="mui-navigate-right">
+                         关于mui
+                     </a>
+                 </li>
+             </ul>
+             <ul class="mui-table-view" style="margin-top: 25px;">
+                 <li class="mui-table-view-cell">
+                     <a style="text-align: center;color: #FF3B30;">
+                         退出登录
+                     </a>
+                 </li>
+             </ul>
+         </div>
+     </div>
+     </body>
+     <script src="__static__/js/mui.min.js"></script>
+     <script src="__static__/js/mui.min.js"></script>
+     <script src="__static__/js/mui.enterfocus.js"></script>
+     <script src="__static__/js/app.js"></script>
+     <script type="text/javascript" src="__static__/js/jquery-1.8.3.min.js"></script>
+     <script>
+         function sendOK(){
+
+         }
+         function sendCancel(){
+
+         }
+         function upload(){
+             var formData = new FormData($('form')[0]);
+             formData.append('file',$(':file')[0].files[0]);
+             $.ajax({
+                 url:'/index/Index/upload',
+                 type:'POST',//GET 或POST
+                 data:formData,
+                 processData: false,
+                 contentType: false,
+                 success:function(data){
+                     var jsonObj =  JSON.parse(data);
+                     if(jsonObj['code'] != 200){
+                         alert(jsonObj['msg']);return;
+                     }
+                     window.location.href = '/index/Index/login';
+
+                 },
+                 error:function(data){
+                     alert("上传失败");return;
+                 }
+             });
+         }
+     </script>
+     </html>
