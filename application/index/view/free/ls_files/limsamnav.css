@@ -1,0 +1,89 @@
+
+/* 顶部联盛导航条 CSS样式开始 */
+#header{
+	background:url(/images/header_bg.gif) repeat-x;
+	height:34px;
+	text-align:center;
+	
+}
+.header_width{
+	width:1000px;
+	margin:0 auto;
+	text-align:left;
+	
+}
+.header_left{
+	width:140px;
+	
+}
+.header_left2 {
+	background:url(/images/logo_tang.jpg) no-repeat;
+	width: 157px;
+	height: 34px;
+}
+.header_left2_link1 {
+	width: 40px;
+	height: 34px;
+	float: left;
+	display: block;
+	margin: 0px 0px 0px 5px;
+	_margin: 0px 0px 0px 3px;
+}
+.header_left2_link2 {
+	width: 40px;
+	height: 34px;
+	float: left;
+	display: block;
+	margin: 0px 0px 0px 12px;
+}
+
+.header_right{
+	float:right;
+	line-height:34px;
+	width:600px;
+	
+}
+.header_yh{
+	padding:0 15px 0 20px;
+	
+}
+.header_yh a{
+	color:#d20000;
+	text-decoration:underline;
+	
+}
+.header_yh a:hover{
+	color:#00C;
+	
+}
+.header_yhLogin {
+	background:url(/images/login.jpg) no-repeat;
+	width: 59px;
+	height: 25px;
+	margin-top: 5px;
+	overflow: hidden;
+}
+.header_yhLogin a {
+	width: 59px;
+	height: 25px;
+	display: block;
+}
+.header_nav{
+	color:#01299a;
+	
+}
+.header_nav a{
+	font-size:12px;
+	color:#01299a;
+	text-decoration:none;
+	padding:0 4px;
+	
+}
+.float_left{
+	float:left;
+	
+}
+.float_right{
+	float:right;
+}
+/* 顶部联盛导航条 CSS样式结束 */

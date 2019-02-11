@@ -1,0 +1,831 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="txt/html; charset=utf-8" />
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+        body{
+            background-color: #9d9d9d;
+        }
+        .one{
+
+            width: 1000px;
+            height: 650px;
+            background-color: white;
+            margin: 0px auto;
+        }
+        .one .top{
+
+            width: 1000px;
+            height: 50px;
+            /*background-color: yellow;*/
+        }
+        .one .top .left{
+            padding-top: 10px;
+            padding-left: 50px;
+            float: left;
+
+            width: 150px;
+            height: 50px;
+            /*background-color: blue;*/
+        }
+        /*.one .top .left img{*/
+        /*width: 30px;*/
+        /*height: 30px;*/
+        /*}*/
+        /*.one .top .left b{*/
+        /*line-height: 50px;*/
+        /*margin-left: 5px;*/
+
+        /*}*/
+        .one .top .center1{
+            float: left;
+            margin-left: 150px;
+            width: 500px;
+            height: 50px;
+            /*background-color: red;*/
+        }
+        .one .top .center1 ul{
+            list-style-type: none;
+        }
+        .one .top .center1 li{
+            margin-top: -3px;
+            float: left;
+            width: 90px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .one .top .center1 li:hover{
+
+            border-bottom: 3px solid red;
+
+        }
+        .one .top .center1 a{
+            text-decoration: none;
+            color: #6c6c6c;
+
+        }
+        .one .top .center1 a:hover{
+            color: red;
+
+        }
+        .one .top .right{
+            float: right;
+            width: 150px;
+            height: 50px;
+            /*background-color: yellow;*/
+        }
+        .one .top .right img{
+            margin-top: 15px;
+        }
+        .one .top .right strong{
+            color: red;
+        }
+        .one .center{
+            padding-left: 150px;
+            padding-top: 100px;
+
+            width: 850px;
+            height: 300px;
+            background:url(http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1209/05/c0/13630426_1346827472064.jpg);
+            /*background-color: red;*/
+        }
+        .one .center .text{
+
+            width: 500px;
+            height: 200px;
+            /*background-color: blue;*/
+        }
+        .one .center .text h1,h4{
+            color: white ;
+        }
+        .one .center .text h1{
+            font-size: 60px;
+        }
+        .one .center .text h4{
+            font-size: 20px;
+        }
+        .one .center .text .button{
+            padding-top: 10px;
+            color: white ;
+            background-color: red;
+            height: 50px;
+            width: 300px;
+            text-align: center;
+            font-size: 30px;
+        }
+        .one .bottom{
+
+            width: 1000px;
+            height: 200px;
+            /*background-color: blue;*/
+        }
+        .one .bottom .one{
+            float: left;
+            width: 250px;
+            height: 200px;
+            text-align: center;
+            /*background-color: red;*/
+        }
+        .one .bottom .Two{
+            float: left;
+            width: 250px;
+            height: 200px;
+            text-align: center;
+            /*    background-color: green;*/
+        }
+        .one .bottom .three{
+            float: left;
+            width: 250px;
+            height: 200px;
+            text-align: center;
+        }
+        .one .bottom .four{
+            float: left;
+            width: 250px;
+            height: 200px;
+            text-align: center;
+            /*background-color: red;*/
+        }
+        .one .bottom  img{
+            margin-top: 30px;
+            height: 40px;
+            width: 40px;
+
+        }
+        .one .bottom  .lucky{
+            margin-top: 10px;
+            height: 45px;
+            width: 250px;
+        }
+        .one .bottom  .lucky1{
+            border-right: 2px solid dimgray;
+        }
+        .two{
+            margin: 0px auto;
+            width: 1000px;
+            height: 250px;
+            background-color: gainsboro;
+        }
+        .two img{
+            width: 100px;
+            height: 100px;
+            margin-left: 450px;
+            margin-top: 40px;
+        }
+        .two h1 {
+            text-align: center;
+            color: gray;
+        }
+
+        .Three{
+            margin: 0px auto;
+            padding-top: 50px;
+            width: 1000px;
+            height: 200px;
+            background:url("images/search-bg.jpg");
+            /*clear: both;*/
+        }
+        .Three h3{
+            text-align: center;
+            color: white;
+        }
+        .Three h4{
+            text-align: center;
+            color: white;
+        }
+        .Three .table{
+            margin-left: 100px;
+            width: 800px;
+            height: 40px;
+            /*background-color: yellow;*/
+        }
+        .Three .table .select1{
+            width: 150px;
+            height: 35px;
+        }
+        .Three .table .select2{
+            margin-left: 50px;
+            width: 150px;
+            height: 35px;
+        }
+        .Three .table select{
+            /*no-repea:防止铺满整个下拉框*/
+            background: white url(images/select-bg.png) no-repeat  right 10px center;
+            /*去掉原有的下拉样式*/
+            -webkit-appearance: none;
+            padding: 10px;
+        }
+        .Three .buttonfind{
+
+            float: right;
+            margin-top: -38px;
+            width: 150px;
+            height: 40px;
+            background-color: red;
+            font-size: 20px;
+            color: white;
+            outline-style: none;
+            outline: none;
+        }
+        .Four{
+            margin: 0px auto;
+            width: 1000px;
+            height: 400px;
+            background-color: #f0f0f0;
+        }
+        .Four .happy1{
+            float: left;
+            width: 180px;
+            height: 300px;
+            margin-top: 40px;
+            margin-left: 70px;
+            /*background-color: red;*/
+        }
+        .Four .happy2{
+            float: left;
+            width: 180px;
+            height: 300px;
+            margin-top: 40px;
+            margin-left: 40px;
+            /*background-color: orange;*/
+        }
+        .Four .happy3{
+            float: left;
+            width: 180px;
+            height: 300px;
+            margin-top: 40px;
+            margin-left: 40px;
+            /*background-color: green;*/
+        }
+        .Four .happy4{
+            float: left;
+            width: 180px;
+            height: 300px;
+            margin-top: 40px;
+            margin-left: 40px;
+            /*background-color: blue;*/
+        }
+        .Four .image{
+            width: 180px;
+            height: 250px;
+
+        }
+        .Four .abcd{
+            text-align: center;
+            color: black;
+        }
+        .Five{
+            margin: 0px auto;
+            width: 1000px;
+            height: 500px;
+            /*background-color: red;*/
+        }
+        .Five .left12{
+            float: left;
+            width: 670px;
+            height: 500px;
+            background:url("images/model1 (1).png");
+        }
+        .Five .left12 .leftCenter{
+            margin-left: 170px;
+            margin-top: 150px;
+            width: 350px;
+            height: 250px;
+            /*background-color: red;*/
+        }
+        .Five .left12 .leftCenter .centerh2{
+            color: white;
+            font-size: 35px;
+            text-align: center;
+        }
+        .Five .left12 .leftCenter .centerh1{
+            color: white;
+            font-size: 140px;
+            text-align: center;;
+        }
+        .Five .left12 .leftCenter .centerh3{
+            color: white;
+            text-align: center;
+            font-size: 22px;
+
+        }
+        .Five .right12{
+            float: right;
+            width: 330px;
+            height: 500px;
+            background-color: white;
+        }
+        .Five .right12 .rightCenter{
+            margin-left: 20px;
+            margin-top: 100px;
+            width: 280px;
+            height: 300px;
+            /*background-color: red;*/
+            text-align: center;
+        }
+        .Five .right12 .rightCenter .strong1{
+            color: red;
+        }
+        .Five .right12 .rightCenter .button12{
+            margin-top: 20px;
+            height: 35px;
+            width: 100px;
+            border: 2px solid red;
+            background-color: white;
+            outline: none;
+            color: red;
+            font-size: 15px;
+        }
+        .Five .right12 .rightCenter .button12:hover{
+            background-color: red;
+            color: white;
+        }
+        .Five .right12 .rightCenter .page{
+            margin-top: 20px;
+            margin-left: 47px;
+        }
+        .Five .right12 .rightCenter .page li{
+            list-style-type: none;
+            margin-left: 40px;
+            float: left;
+            width: 8px;
+            height: 8px;
+            /*裁圆*/
+            border-radius: 8px;
+            background-color: white;
+            border: 1.5px solid #929292;
+        }
+        .Five .right12 .rightCenter .page li:hover{
+            background-color: #929292;
+        }
+        .Five .right12 .rightCenter .page .seletd5{
+            background-color: #929292;
+        }
+        .six{
+            margin: 0px auto;
+            width: 1000px;
+            height: 450px;
+            background-color: white;
+        }
+        .six .zxd1{
+            float: left;
+            width: 330px;
+            height: 450px;
+            background-color: red;
+        }
+        .six .zxd1 .ZXD1 h3{
+            color: white;
+        }
+        .six .zxd1 .ZXD1 .buttonZXD1{
+            color: white;
+            border:1.5px solid white;
+            background-color: red;
+            outline: none;
+        }
+        .six .zxd1 .ZXD1 .buttonZXD1:hover{
+            background-color: white;
+            color: red;
+        }
+        .six .ZXD{
+            margin-left: 55px;
+            margin-top: 140px;
+            width: 220px;
+            height: 150px;
+            /*background-color: green;*/
+            text-align: center;
+        }
+        .six .ZXD .hr1{
+            margin-left: 100px;
+            width: 20px;
+        }
+        .six .ZXD .buttonZXD{
+            font-size: 19px;
+            width: 120px;
+            height: 35px;
+            text-align: center;
+            background-color: white;
+        }
+        .six .zxd2{
+            float: left;;
+            width: 330px;
+            height: 450px;
+            /*background-color: blue;*/
+        }
+        .six .zxd2 .ZXD2 h3{
+            color: #8e8e8e;
+        }
+        .six .zxd2 .ZXD2 .buttonZXD2{
+            color: red;
+            border:1.5px solid red;
+            background-color: white;
+            outline: none;
+        }
+        .six .zxd2 .ZXD2 .buttonZXD2:hover{
+            color:white;
+            background-color: red;
+            outline: none;
+        }
+        .six .zxd3{
+            margin-left: 10px;
+            float: left;
+            width: 330px;
+            height: 450px;
+            background:url(images/model2.png);
+        }
+        .seven{
+            margin: 0px auto;
+            padding-top: 80px;
+            width: 1000px;
+            height: 500px;
+            background-color: white;
+        }
+        .seven .fyt1{
+            /*margin-top: 20px;*/
+            text-align: center;
+            width: 1000px;
+            height: 100px;
+            /*background-color: yellow;*/
+        }
+        .seven .fyt1 .hr10{
+            width: 40px;
+            margin-left: 480px;
+
+        }
+        .seven .fyt1 h5{
+            color: #8e8e8e;
+        }
+        .seven .fyt2{
+            margin-left: 50px;
+            margin-top: 40px;
+            width: 900px;
+            height: 300px;
+            /*background-color: blue;*/
+        }
+        .seven .fyt2 .fytleft{
+            float: left;
+            width: 300px;
+            height: 300px;
+            /*background-color: red;*/
+        }
+        .seven .fyt2 .fytleft h5{
+            font-size: 18px;
+        }
+        .seven .fyt2 .fytleft h6{
+            font-size: 13px;
+            color: #7b7b7b;
+        }
+        .seven .fyt2 .fytleft a{
+            text-decoration: none;
+            float: right;
+            color: #7b7b7b;
+        }
+        .seven .fyt2 .fytright{
+            float: right;
+            width: 570px;
+            height: 300px;
+            /*background-color: yellow;*/
+        }
+        .seven .fyt2 .fytright .textZXD{
+            margin-left: 10px;
+            width: 260px;
+            height: 35px;
+            background-color: #d0d0d0;
+            outline-style: none;
+            user-select: none;
+        }
+        .seven .fyt2 .fytright .textZXD2{
+            margin-left: 10px;
+            width: 540px;
+            height: 120px;
+            background-color: #d0d0d0;
+            outline-style: none;
+            user-select: none;
+        }
+        .seven .fyt2 .fytright .submit{
+            font-size: 16px;
+            margin-left: 10px;
+            width: 540px;
+            height: 45px;
+            background-color: #d0d0d0;
+            outline-style: none;
+
+        }
+        .eight{
+            margin: 0px auto;
+            padding-top:80px;
+            width: 1000px;
+            height: 270px;
+            background-color: #3c3c3c;
+        }
+        .eight .asd{
+            margin-left: 200px;
+            width: 600px;
+            height: 200px;
+            /*background-color: red;*/
+            text-align: center;
+        }
+        .eight .asd big{
+            font-size: 20px;
+            color: #d0d0d0;
+        }
+        .eight .asd h6{
+            /*font-size: 20px;*/
+            color: #d0d0d0;
+        }
+        .eight .asd .textasd{
+            margin-left: -100px;
+            width: 350px;
+            height: 35px;
+            /*color: #d0d0d0;*/
+            padding-left: 10px;
+        }
+        .eight .asd .submit1{
+            /*绝对定位*/
+            position: absolute;
+            width: 100px;
+            height: 40px;
+            background-color: #8e8e8e;
+            color: white;
+            font-size: 18px;
+            outline-style: none;
+        }
+        .eight .asd ul{
+            margin-top: 20px;
+            margin-left: 150px;
+            list-style-type: none;
+        }
+        .eight .asd ul li{
+            float: left;
+            height: 40px;
+            width: 60px;
+
+        }
+        .eight .qwe{
+            /*margin-top: 50px;*/
+            width: 1000px;
+            height: 70px;
+            background-color: #272727;
+        }
+        .eight .qwe .XDleft{
+            float: left;
+            width: 180px;
+            height: 70px;
+            text-align: right;
+            line-height: 70px;
+            /*background-color: yellow;*/
+        }
+        .eight .qwe .XDright{
+            float: right;
+            width: 150px;
+            height: 70px;
+            line-height: 70px;
+            /*background-color: green;*/
+        }
+        .eight .qwe .XDleft strong{
+            color: #d0d0d0;
+            font-size: 13px;
+        }
+        .eight .qwe .XDright a{
+            text-decoration: none;
+            color: #d0d0d0;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+<div class="one">
+    <div class="top">
+        <div class="left">
+            <img src="images/header-logo.png"/>
+            <b>新世界</b>
+
+        </div>
+        <div class="center1">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">最新活动</a></li>
+                <li><a href="#">项目介绍</a></li>
+                <li><a href="#">爱心社区</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <img src="images/header-user.png">
+            <strong>登录</strong>
+        </div>
+    </div>
+    <div class="center">
+        <div class="text">
+            <h1>Time of new life</h1>
+            <br><h4>新时代，年轻的人们让我们一起</h4>
+            <h4>体验新生活，享受新生活</h4>
+
+            <br><br><div class="button"><h3>开始体验</h3></div>
+
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="one">
+            <img src="images/advancement-1.png">
+            <div class="lucky lucky1"><h3>打造全新世界，让你更</h3>
+                <h3>爱你的生活</h3></div>
+
+        </div>
+        <div class="Two">
+            <img src="images/advancement-2.png">
+            <div class="lucky lucky1"> <h3>丰富多彩的公益活动，发</h3>
+                <h3>挥新世界的主人公意思</h3></div>
+
+        </div>
+        <div class="three">
+            <img src="images/advancement-3.png">
+            <div  class="lucky lucky1"> <h3>时尚的新理念，超前体验</h3>
+                <h3>未知的生活</h3></div>
+        </div>
+        <div class="four">
+            <img src="images/advancement-4.png">
+            <div class="lucky"><h3>完善的培养机制，培养你</h3>
+                <h3>全新的世界观</h3></div>
+        </div>
+    </div>
+</div>
+<div class="two">
+    <img src="images/question-logo.png" >
+    <br><br> <h1>关于新世界，你不知道的还有什么?</h1>
+</div>
+<div class="Three">
+    <h3>查找新世界城市活动信息</h3>
+    <br><br><h4 class="threetext">每个城市有不同的活动信息，请自主查询您所需了解的城市</h4>
+    <br><br><br><div class="table">
+    <table>
+        <select class="select1">
+            <option>中国</option>
+            <option>德国</option>
+            <option>意大利</option>
+            <option>美国</option>
+        </select>
+        <select class="select2">
+            <option>省份</option>
+            <option>广西</option>
+            <option>北京</option>
+            <option>上海</option>
+            <option>天津</option>
+            <option>广东</option>
+            <option>湖北</option>
+
+        </select>
+        <select class="select2">
+            <option>城市</option>
+            <option>南宁</option>
+            <option>柳州</option>
+            <option>桂林</option>
+            <option>北海</option>
+            <option>百色</option>
+            <option>河池</option>
+        </select>
+    </table>
+    <button class="buttonfind">搜索</button>
+
+</div>
+
+</div>
+<div class="Four">
+    <div class="happy1">
+        <img src="images/beijing.png" class="image">
+        <br><h3 class="abcd">北京活动</h3>
+        <br><h4 class="abcd">新社区大联盟</h4>
+    </div>
+    <div class="happy2">
+        <h3 class="abcd">上 海 活 动</h3>
+        <br><h4 class="abcd">夜上海新景观探索</h4>
+        <br><img src="images/shanghai.png" class="image">
+
+    </div>
+    <div class="happy3">
+        <img src="images/shenzhen.png" class="image">
+        <br> <h3 class="abcd">深圳活动</h3>
+        <br><h4 class="abcd">全新海岸线观点站</h4>
+    </div>
+    <div class="happy4">
+        <img src="images/hongkong.png" class="image">
+        <br><h3 class="abcd">香港活动</h3>
+        <br><h4 class="abcd">奢侈消费大派送</h4>
+    </div>
+
+</div>
+<div class="Five">
+    <div class="left12">
+        <div class="leftCenter">
+            <h2 class="centerh2">新世界</h2>
+            <h1 class="centerh1">TIME</h1>
+            <h3 class="centerh3">@新世界 - 北京</h3>
+            <br><h3 class="centerh3">2016.04.01</h3>
+        </div>
+    </div>
+    <div class="right12">
+        <div class="rightCenter">
+            <h2>新世界/<strong class="strong1">01</strong></h2>
+            <br>新世界新世界新世界新世界
+            <br><br>新世界新世界新世界新世界
+            <br><br>新世界新世界新世界新世界
+            <br><br>新世界新世界新世界新世界
+            <br><br>新世界新世界新世界新世界
+            <br><button class="button12" >更多详情</button>
+            <ul class="page">
+                <li class="seletd5"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div class="six">
+    <div class="zxd1">
+        <div class="ZXD ZXD1">
+            <h3>新时代</h3>
+            <br><h3>关于爱生活的我们</h3>
+            <br><hr class="hr1" style="border:1.5px solid white">
+            <br><button class="buttonZXD buttonZXD1">查看更多</button>
+
+        </div>
+    </div>
+    <div class="zxd2">
+        <div class="ZXD ZXD2">
+            <h3>新时代</h3>
+            <br><h3>关于爱生活的我们</h3>
+            <br><hr class="hr1" style="border:1.5px solid #8e8e8e">
+            <br><button class="buttonZXD buttonZXD2">查看更多</button>
+
+        </div>
+
+    </div>
+    <div class="zxd3">
+
+    </div>
+</div>
+<div class="seven">
+    <div class="fyt1">
+        <h2>成为我们的志愿者</h2>
+        <br><hr class="hr10" style="border:1.5px solid red">
+        <br><h5>新世界的大家庭需要每一个爱生活的人加入，如果你够年轻，有梦想，有激情</h5>
+        <h5>那就不要犹豫，快来加入我们，成为改变所以人生活的人</h5>
+
+    </div>
+    <div class="fyt2">
+        <div class="fytleft">
+            <h5>新世界志愿者协会</h5>
+            <br><h6>加入新世界志愿者的人员必须遵守中华人民共和国的相关法律法规，并且本着平等资源的原则......</h6>
+
+            <br><a href="#"><img src="images/unfold.png">more</a>
+            <br><br><br><h5>新世界志愿者权利</h5>
+            <br><h6>新世界志愿者享受新世界内部所有的资源共享，并且享受在四新世界活动的优先的参与资格......</h6>
+
+            <br><a href="#"><img src="images/unfold.png">more</a>
+            <br><br><h5>更多条款</h5>
+            <a href="#"><img src="images/unfold.png">more</a>
+        </div>
+        <div class="fytright">
+            <input type="text" value="姓名：" class="textZXD">
+            <input type="text" value="年龄：" class="textZXD">
+            <br><br><input type="text" value="联系方式：" class="textZXD">
+            <input type="text" value="联系地址：" class="textZXD">
+            <br><br><textarea class="textZXD2">请简单描述梦想的生活:</textarea>
+            <br><br><input type="submit" class="submit" value="提交申请">
+        </div>
+    </div>
+</div>
+<div class="eight">
+    <div class="asd">
+        <big>联系我们</big>
+        <br><br><h6>为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯</h6>
+        <h6>也可以通过以下任何方式关注我们动态</h6>
+        <br><input type="text" placeholder="someone@email.com" class="textasd">
+        <!-- <button class="submit1">提交</button> -->
+        <input type="submit" class="submit1">
+        <ul>
+            <li><img src="images/qq.png"></li>
+            <li><img src="images/globe.png"></li>
+            <li><img src="images/twitter.png"></li>
+            <li><img src="images/1.png"></li>
+        </ul>
+    </div>
+    <div class="qwe">
+        <div class="XDleft">
+            <strong>@2016新世界</strong>
+        </div>
+        <div class="XDright">
+            <a href="#">Back  to top</a>
+
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

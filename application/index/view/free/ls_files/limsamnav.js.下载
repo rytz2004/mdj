@@ -1,0 +1,22 @@
+var SourceSrUrl = "";
+//SourceSrUrl ="http://192.168.0.110:348";	//本地此句
+SourceSrUrl ="http://www.52bjd.com";		//远程
+var lsmNav = "";
+lsmNav += "<link href=\""+SourceSrUrl+"/css/limsamnav.css\" rel=\"stylesheet\" type=\"text/css\" />";
+lsmNav += "<div id=\"header\">";
+lsmNav += "  <div class=\"header_width\">";
+lsmNav += "    <div class=\"header_left float_left\"><a href=\"http://www.limsam.cn\" target=\"_blank\" title=\"\"><img src=\""+SourceSrUrl+"/images/logo.gif\" title=\"\" /></a></div>";
+lsmNav += "    <div class=\"header_left2 float_left\">";
+lsmNav += "    	<a href=\"http://www.52bjd.com/\" class=\"header_left2_link1\" title=\"白金岛\" target=\"_blank\"></a>";
+//lsmNav += "    	<a href=\"http://www.qfwuyi.com/\" class=\"header_left2_link2\" title=\"清风武易\" target=\"_blank\"></a>";
+//lsmNav += "    	<a href=\"http://tc.52bjd.com/\" class=\"header_left2_link2\" title=\"天策\" target=\"_blank\"></a>";
+lsmNav += "    </div>";
+lsmNav += "    <div class=\"header_right\">";
+lsmNav += "        <div class=\"header_nav float_right\">";
+//lsmNav += "          <a href='javascript:;' onclick=\"javascript:location.href='http://account.limsam.cn/account/qq/login.aspx';return false;\"><img style='vertical-align:middle;padding-bottom:6px;' src=\""+SourceSrUrl+"/images/qq_login.gif\"></a>";
+lsmNav += "			 <a href=\"http://www.52bjd.com/\" target=\"_blank\" title=\"\">官网首页</a> | <a href=\"http://www.52bjd.com/service/default.aspx\" target=\"_blank\" title=\"\">客服中心</a> | <a href=\"http://bbs.52bjd.com/\" target=\"_blank\" title=\"\">官网论坛</a>";
+lsmNav += "        </div>";
+lsmNav += "    </div>";
+lsmNav += "   </div>";
+lsmNav += "</div>";
+document.writeln(lsmNav);
