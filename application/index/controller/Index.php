@@ -28,8 +28,7 @@ class Index extends Controller
         {
             $account = input('account');
             $password = input('password');
-            //$account = $_POST['account'];
-            //$password = $_POST['password'];
+
             if(empty($account) || empty($password))
             {
                 $param['code'] = -1;
@@ -38,16 +37,19 @@ class Index extends Controller
             }
 
             $user_info = Db::table('mdj_user')->where('user_name','=',$account)->find();
+
             if(empty($user_info)){
                 $param['code'] = -2;
                 $param['msg'] = "账号不存在";
                 return json_encode($param,true);
             }
+
             if($user_info['password'] != md5($password)){
                 $param['code'] = -2;
                 $param['msg'] = "密码错误";
                 return json_encode($param,true);
             }
+
             return json_encode($param,true);
         }
 
@@ -72,6 +74,7 @@ class Index extends Controller
             }
 
             $user_info = Db::table('mdj_user')->where('user_name','=',$account)->find();
+
             if(!empty($user_info)){
                 $param['code'] = -2;
                 $param['msg'] = "账号已经存在";
@@ -133,7 +136,8 @@ class Index extends Controller
         }
     }
 
-    public function autoRegister(){//http://mdj.com/index/Index/autoRegister
+    public function autoRegister()//http://mdj.com/index/Index/autoRegister
+    {
      
     }
 }
